@@ -35,7 +35,8 @@
     
 		<!-- Bibtext preferences -->
 		<script src="js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-		<bibtex src="publications.bib"></bibtex>
+		<!--<bibtex src="https://raw.githubusercontent.com/CoolProp/CoolProp/master/CoolPropBibTeXLibrary.bib"></bibtex>-->
+		<bibtex src="https://raw.githubusercontent.com/pnenp/pnenp.github.io/master/publications.bib"></bibtex>
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -85,24 +86,15 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="about-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
 						</div>
 					</div>
-					<input type="text" class="bibtex_search" list="suggests">
-					<button type="submit" class="bibtex_print">Save</button>
 
-					<datalist id="suggests">
-						<option value="@author=">
-						<option value="@title=">
-						<option value="@year=">
-						<option value="@journal=">
-					</datalist>
-
-					<div id="bibtex_errors"></div>
-					<hr>
-					<h2>Publications</h2>
-					<hr>
+					<div class="section-title text-center center">
+						<h2>Publications</h2>
+						<hr>
+					</div>
 					<div id="bibtex_display">
+						
 						<div class="bibtex_template">
 							<ul> <li>
 									<span class="if title">
@@ -116,13 +108,12 @@
 									<div>
 										<span class="if journal"><em><span class="journal"></span></em></span>
 										<span class="if month"><span class="month"></span>,</span> 
-										<span class="if year"><span class="year"></span></span>.
+										<span class="if year"><span class="year"></span>.</span>
 									</div>
 							</li></ul>
 						</div>
+						
 					</div>
-				</div>
-				
 				<!-- Miscellaneous Section -->
 				<div id="Miscellaneous">
 					<div class="container">
