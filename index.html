@@ -35,7 +35,7 @@
     
 <!-- Bibtext preferences -->
 <script src="js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-    <bibtex src="publications.bib"></bibtex>
+<bibtex src="publications.bib"></bibtex>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -73,6 +73,7 @@
     </div>
   </nav>
 </div>
+    
 <!-- Research Section -->
 <div id="research">
   <div class="container">
@@ -87,29 +88,54 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
       </div>
     </div>
-    <div>
-    <div id="bibtex_display">
-  <div class="bibtex_template">
-  <ul> <li>
-    <span class="if title">
-      <a class="url">
-          <span class="title"></span>,
-      </a>
-    </span>
-    <div class="if author">
-      <span class="author"></span>
-    </div>
-    <div>
-      <span class="if journal"><em><span class="journal"></span></em></span>
-      <span class="if month"><span class="month"></span>,</span> 
-      <span class="if year"><span class="year"></span></span>.
-    </div>
-  </li></ul>
+    <input type="text" class="bibtex_search" list="suggests">
+<button type="submit" class="bibtex_print">Save</button>
+
+<datalist id="suggests">
+    <option value="@author=">
+    <option value="@title=">
+    <option value="@year=">
+    <option value="@journal=">
+</datalist>
+
+<div id="bibtex_errors"></div>
+<h1> Rendered Publications</h1>
+
+<div class="bibtex_topics"> </div>
+
+<div class="bibtex_structure">
+  <div class="sections bibtextypekey">
+      <div class="section @article" title="Refereed Articles"></div>
+      <div class="section @book" title="Books"></div>
+      <div class="section @inproceedings" title="Conference and Workshop Papers"></div>
+      <div class="section @misc|@phdthesis|@mastersthesis|@bachelorsthesis|@techreport" title="Other Publications"></div>
+      <div class="sort title" extra="ASC string">
+        <div class="templates"></div>
+      </div>
   </div>
-</div>    
-    </div>
+</div>
+
+<div id="bibtex_display">
+
+  <div class="bibtex_template">
+    <ul> <li>
+      <span class="if title">
+        <a class="url">
+            <span class="title"></span>,
+        </a>
+      </span>
+      <div class="if author">
+        <span class="author"></span>
+      </div>
+      <div>
+        <span class="if journal"><em><span class="journal"></span></em></span>
+        <span class="if month"><span class="month"></span>,</span>
+        <span class="if year"><span class="year"></span>.</span>
+      </div>
+    </li></ul>
   </div>
   
+</div>
 </div>
 <!-- Miscellaneous Section -->
 <div id="Miscellaneous">
