@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Clément Dallard, PhD student</title>
+		<meta name="description" content="Research, publications and contact">
+		<meta name="author" content="Clément Dallard">
+
+		<!-- Favicons
+				 ================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+		<!-- Stylesheet
+				 ================================================== -->
+		<link rel="stylesheet" type="text/css"  href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+		<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+				<![endif]-->
+    
+		<!-- Bibtex preferences -->
+		<script src="js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+		<bibtex src="https://raw.githubusercontent.com/pnenp/pnenp.github.io/master/publications.bib"></bibtex>
+	</head>
+	
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		
+		<!-- Header -->
+		<header id="header">
+			<div class="intro">
+				<div class="container">
+					<div class="intro-text">
+						<div class="row">
+							<h1>Clément Dallard</h1>
+							<hr>
+							<p>Graphs • Algorithms • Or not</p>
+						</div>
+					</div>
+				</div>
+		</header>
+		
+		<!-- Navigation -->
+		<div id="nav">
+			<nav class="navbar navbar-custom">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+					</div>
+					
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-main-collapse">
+						<ul class="nav navbar-nav">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"> <a href="#page-top"></a> </li>
+							<li> <a class="page-scroll" href="#research">Research</a> </li>
+							<li> <a class="page-scroll" href="#publications">Publications</a> </li>
+							<li> <a class="page-scroll" href="#misc">Miscellaneous</a> </li>
+							<li> <a class="page-scroll" href="#contact">Contact</a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<!-- Research Section -->
+		<div id="research">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>Research</h2>
+					<hr>
+				</div>
+				<div class="row">					
+					<div class="col-md-8 col-md-offset-2">
+						<p>My research is currently focused on partition of graphs under constraints, and more specifically for community and community structure detection.</p>
+						<p>I am currently a PhD student in the <a href="http://www.port.ac.uk/school-of-computing/" target="_blank">School of Computing</a> in the <a href="http://www.port.ac.uk/" target="_blank">University of Portmouth, UK</a>. I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="publications">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>Publications</h2>
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div id="bibtex_display">
+							<p>
+								<div class="bibtex_template">
+									<ul> <li>
+											<span class="if title">
+												<a class="url">
+													<span class="title"></span>,
+												</a>
+											</span>
+											<div class="if author">
+												<span class="author"></span>
+											</div>
+											<div>
+												<span class="if booktitle"><em><span class="booktitle"></span></em></span>
+												<span class="if journal"><em><span class="journal"></span></em></span>
+												<span class="if publisher"><em><span class="publisher"></span></em></span>
+												<span class="if year"><span class="year"></span>.</span>
+											</div>
+									</li></ul>
+								</div>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Miscellaneous Section -->
+				<div id="misc">
+					<div class="container">
+						<div class="section-title text-center center">
+							<h2>Miscellaneous</h2>
+							<hr>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<p>To be updated!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Contact Section -->
+				<div id="contact" class="text-center">
+					<div class="container">
+						<div class="section-title center">
+							<h2>Contact</h2>
+							<hr>
+						</div>
+						<div class="row">
+							
+							<p>clement[dot]dallard[at]port[dot]ac[dot]uk</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="footer">
+					<div class="container text-center">
+					</div>
+				</div>
+				<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+				<script type="text/javascript" src="js/bootstrap.js"></script> 
+				<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+				<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+				<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+				<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+				<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
