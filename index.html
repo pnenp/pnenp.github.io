@@ -33,23 +33,28 @@
 				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 				<![endif]-->
     
-		<!-- Bibtext preferences -->
+		<!-- Bibtex preferences -->
 		<script src="js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 		<bibtex src="https://raw.githubusercontent.com/pnenp/pnenp.github.io/master/publications.bib"></bibtex>
 
-				
+		<!-- Particles -->
+		<link href="assets/css/particles.css" rel="stylesheet">
+		<script src="assets/js/particles.js"></script>
+		
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+		<div id="particles-js">
+		</div>
 		<!-- Header -->
 		<header id="header">
 			<div class="intro">
 				<div class="container">
 					<div class="row">
 						<div class="intro-text">
-							<h1>Clément Dallard, PhD student</h1>
+							<h1>Clément Dallard</h1>
 							<hr>
-							<p>Graphs • Algorithms • Headaches</p>
+							<p>Graphs • Algorithms • Or not</p>
 						</div>
 					</div>
 				</div>
@@ -68,6 +73,7 @@
 							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 							<li class="hidden"> <a href="#page-top"></a> </li>
 							<li> <a class="page-scroll" href="#research">Research</a> </li>
+							<li> <a class="page-scroll" href="#publications">Publications</a> </li>
 							<li> <a class="page-scroll" href="#misc">Miscellaneous</a> </li>
 							<li> <a class="page-scroll" href="#contact">Contact</a> </li>
 						</ul>
@@ -75,7 +81,7 @@
 				</div>
 			</nav>
 		</div>
-    
+		
 		<!-- Research Section -->
 		<div id="research">
 			<div class="container">
@@ -85,19 +91,22 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<div class="about-text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-						</div>
+						<p>My research is currently focused on partition of graphs under constraints, and more specifically for community and community structure detection.</p>
+						<p>I am currently a PhD student in the <a href="http://www.port.ac.uk/school-of-computing/" target="_blank">School of Computing</a> in the <a href="http://www.port.ac.uk/" target="_blank">University of Portmouth, UK</a>. I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
 					</div>
-
-					<div class="section-title text-center center">
-						<h2>Publications</h2>
-						<hr>
-					</div>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<div id="bibtex_display">
-								
+				</div>
+			</div>
+		</div>
+		<div id="publications">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>Publications</h2>
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div id="bibtex_display">
+							<p>
 								<div class="bibtex_template">
 									<ul> <li>
 											<span class="if title">
@@ -116,9 +125,10 @@
 											</div>
 									</li></ul>
 								</div>
-							</div>
+							</p>
 						</div>
 					</div>
+				</div>
 				<!-- Miscellaneous Section -->
 				<div id="Miscellaneous">
 					<div class="container">
