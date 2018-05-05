@@ -32,6 +32,17 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+<!-- Bibtext preferences -->
+<script src="js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+    <bibtex src="publications.bib"></bibtex>
+    
+    <style>
+    body{ font: 80% "Trebuchet MS", sans-serif; margin: 10px;}
+    textarea { font-size: 8pt; width: 500px; height: 150px; }
+    #bibtex_errors { margin-top:10px; color: red;}
+    h1 { font-size: 12pt; margin-top:20px; }
+    </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -69,7 +80,7 @@
     </div>
   </nav>
 </div>
-<!-- About Section -->
+<!-- Research Section -->
 <div id="research">
   <div class="container">
     <div class="section-title text-center center">
@@ -84,10 +95,31 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
       </div>
     </div>
+    <div>
+    <div id="bibtex_display">
+  <div class="bibtex_template">
+  <ul> <li>
+    <span class="if title">
+      <a class="url">
+          <span class="title"></span>,
+      </a>
+    </span>
+    <div class="if author">
+      <span class="author"></span>
+    </div>
+    <div>
+      <span class="if journal"><em><span class="journal"></span></em></span>
+      <span class="if month"><span class="month"></span>,</span> 
+      <span class="if year"><span class="year"></span></span>.
+    </div>
+  </li></ul>
+  </div>
+</div>    
+    </div>
   </div>
   
 </div>
-<!-- Portfolio Section -->
+<!-- Miscellaneous Section -->
 <div id="Miscellaneous">
   <div class="container">
     <div class="section-title text-center center">
