@@ -8,8 +8,8 @@ $(document).ready(function(){
 				var goto = $(this).attr('href');
 				
 				$('html, body').animate({
-						scrollTop: $(goto).offset().top-40
-				}, 10);
+						scrollTop: $(goto).offset().top-50
+				}, 800);
 
 		});
 });
