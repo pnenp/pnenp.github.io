@@ -48,12 +48,9 @@ footer.page-footer {
   margin: 0;
 }
 
-
-
-
  .parallax img 
  {
- 	 background-repeat: no-repeat;
+ 	 background-repeat: repeat;
  	 background-size: cover;
  }
  .parallax-container
@@ -171,14 +168,4 @@ hr {
 .fa:hover
 {
 	color:#26a69a;
-}
-
-.floating-container{
-		background-color:white;
-		color:white;
-}
-.parallax-container ul ul {
-		position:inherit;
-		display:inline;
-    white-space: nowrap;
 }
