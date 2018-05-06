@@ -13,7 +13,7 @@ p {
 }
 
 .parallax-container {
-  height: 333px;
+	min-height: 333px;
   line-height: 0;
   color: rgba(255,255,255,.9);
 }

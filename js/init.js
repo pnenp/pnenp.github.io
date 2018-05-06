@@ -1,20 +1,13 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-		$('.scrollspy').scrollSpy();
+		//$('.scrollspy').scrollSpy();
 		$('.parallax').parallax();
 
 });
 
-$('.head-link').click(function(e) {
-		e.preventDefault();
-		
-		var goto = $(this).attr('href');
-		
-		$('html, body').animate({
-				scrollTop: $(goto).offset().top-40
-		}, 600);		
-});
+var h = $('nav')[0].scrollHeight;
 
-function activate(page){
-		$("."+page).addClass("active");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {'scrollOffset':h});
+});
