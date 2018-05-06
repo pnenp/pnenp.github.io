@@ -92,7 +92,9 @@ nav li a {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
-
+nav ul a.active {
+  background: rgba(0,0,0,0.2);
+}
 
 
 .post-preview > .post-meta {
@@ -161,8 +163,6 @@ hr {
   text-overflow: ellipsis;
 
 }
-
-
  
 .fa{
 	 
@@ -171,4 +171,14 @@ hr {
 .fa:hover
 {
 	color:#26a69a;
+}
+
+.floating-container{
+		background-color:white;
+		color:white;
+}
+.parallax-container ul ul {
+		position:inherit;
+		display:inline;
+    white-space: nowrap;
 }

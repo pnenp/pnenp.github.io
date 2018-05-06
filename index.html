@@ -21,9 +21,9 @@
       <nav class="blue-grey darken-4">
 				<div class="nav-wrapper container">
     			<!-- <div class="container"> <a href="index.html" class="brand-logo">Logo</a></div> -->
-					
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-					<ul class="right hide-on-med-and-down">
+
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<!--<li><a class="head-link text-lighten-3" href="#top">Home</a></li>-->
 						<li><a class="head-link" href="#research">Research</a></li>
 						<li><a class="head-link" href="#publications">Publications</a></li>
@@ -31,7 +31,7 @@
 						<li><a class="head-link" href="#miscellaneous">Miscellaneous</a></li>
 					</ul>
 					
-					<ul class="right side-nav" id="mobile-demo">
+					<ul class="sidenav" id="mobile-demo">
 						<!--<li><a class="head-link" href="#top">Home</a></li>-->
 						<li><a class="head-link" href="#research">Research</a></li>
 						<li><a class="head-link" href="#publications">Publications</a></li>
@@ -41,9 +41,8 @@
 				</div>
       </nav>
     </div>
-
+		
 		<div class="parallax-container">
-			
 			<div class="row no-pad-bot">
 				
 				<div class="col center l6 offset-l3 m8 offset-m2">
@@ -58,89 +57,99 @@
 					<br><br>
 				</div>
 			</div>
-			<div class="parallax"><img src="images/Black_Diamonds.png">
+			
+			<div class="row" style="width:auto;padding-left:5%;background-color:white;margin-right:10%;margin-bottom:50px;">
+				<div class="container" style="position:static"> <!-- Container : big padding/margin. Suited for big chunks of pages -->
+					<!-- RESEARCH -->
+					<div class="row scrollspy" id="research"> <!-- Row : Sweet left margin, suited for a block of content -->
+						<div class="col m8 offset-m1"> <!-- Col m8 : width of 8 columns (out of 12) on (m) medium-or-higher-width screens with a offset of 1 column (offset-m1) of said screens-->
+							<h3><i class="material-icons">arrow_right</i> Research</h3>
+
+							<p>I am a PhD student in the <a href="http://www.port.ac.uk/school-of-computing/" target="_blank">School of Computing</a> at the <a href="http://www.port.ac.uk/" target="_blank">University of Portmouth, UK</a>.
+								I work under the supervision of Janka Chlebíková.     
+								My research is currently focused on partition of graphs under constraints, especially for community and community structure detection.</p>
+							<p>I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+
+			<div class="row" style="width:auto;padding-left:5%;background-color:white;margin-left:10%;margin-bottom:50px;">
+				<!-- PUBLICATIONS -->
+				<div class="row scrollspy" id="publications">
+					<div class="col m8 offset-m1">
+						<h3><i class="material-icons">arrow_right</i> Publications</h3>
+						
+						<p>
+							<ul>
+								<li><ul>
+										<li>Community of maximum size: complexity and approximation</li>
+										<li>Bazgan, Cristina, Chlebikova, Janka, Dallard, Clement, and Pontoizeau, Thomas</li>
+										<li>Submitted to International Symposium on Algorithms and Computation, 2018.</li>
+								</ul></li>
+						</p>
+						<!--
+								Complexity of Scheduling for Dial-a-Ride Problems with Soft Ride Times
+								Chlebikova, Janka, Dallard, Clement, and Paulsen, Niklas
+								Submitted to International Symposium on Mathematical Foundations of Computer Science, 2018.
+								Instance Guaranteed Ratio on Greedy Heuristic for Genome Scaffolding
+										Dallard, Clement, Weller, Mathias, Chateau, Annie, and Giroudeau, Rodolphe
+										International Conference on Combinatorial Optimization and Applications, Springer, 2016.
+										Scaffolding problems revisited: complexity, approximation and fixed parameter tractable algorithms, and some special cases
+										Weller, Mathias, Chateau, Annie, Dallard, Clement, and Giroudeau, Rodolphe
+										Algorithmica, Springer, 2016.
+							-->
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row" style="width:auto;padding-left:5%;background-color:white;margin-right:10%;margin-bottom:50px;">
+				<!-- CONTACT | BETTER HERE THAN AT THE BOTTOM... WHAT ABOUT NEXT TO THE NAME? -->
+				<div class="row scrollspy" id="contact">
+					<div class="col m8 offset-m1">
+						<h3><i class="material-icons">arrow_right</i> Contact</h3>
+						<ul>
+							<li><i class="material-icons">email</i> clement.dallard@port.ac.uk</li>
+							<li><i class="material-icons">location_on</i> Buckingham Building, Lion Terrace, Portsmouth PO1 3HE UK</li>
+							<li><i class="material-icons">phone</i> +44 (0)23 9284 6460</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
-		</div>
-</div>
-
-<div class="container"> <!-- Container : big padding/margin. Suited for big chunks of pages -->
-  <!-- RESEARCH -->
-  <div class="row" id="research"> <!-- Row : Sweet left margin, suited for a block of content -->
-    <div class="col m8 offset-m1"> <!-- Col m8 : width of 8 columns (out of 12) on (m) medium-or-higher-width screens with a offset of 1 column (offset-m1) of said screens-->
-      <h3><i class="material-icons">arrow_right</i> Research</h3>
-      <p>I am a PhD student in the <a href="http://www.port.ac.uk/school-of-computing/" target="_blank">School of Computing</a> at the <a href="http://www.port.ac.uk/" target="_blank">University of Portmouth, UK</a>.
-	 I work under the supervision of Janka Chlebíková.     
-	 My research is currently focused on partition of graphs under constraints, especially for community and community structure detection.</p>
-      <p>I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
-      <br>
-    </div>
-  </div>
-	
-  <!-- PUBLICATIONS -->
-  <div class="row" id="publications">
-    <div class="col m8 offset-m1">
-      <h3><i class="material-icons">arrow_right</i> Publications</h3>
-      <div id="bibtex_display">
-				<p>
-					<div class="bibtex_template">
-						<ul> <li>
-								<span class="if title">
-									<a class="url">
-										<span class="title"></span>
-									</a>
-								</span>
-								<div class="if author">
-									<span class="author"></span>
-								</div>
-								<div>
-									<span class="if booktitle"><em><span class="booktitle"></span></em>, </span><span class="if journal"><em><span class="journal"></span></em>, </span><span class="if publisher"><em><span class="publisher"></span></em></span><span class="if year">, <span class="year"></span>.</span>
-								</div>
-						</li></ul>
+			<div class="row" style="width:auto;padding-left:5%;background-color:white;margin-left:10%;margin-bottom:50px;">
+				<!-- MISCELLANEOUS -->
+				<div class="row scrollspy" id="miscellaneous">
+					<div class="col m8 offset-m1">
+						<h3><i class="material-icons">arrow_right</i> Miscellaneous</h3>
+						<p>To be updated!</p>
 					</div>
-      </div>
-    </div>
-  </div>
+				</div>
+			</div>
+			<div class="row center">
+				<a href="#top" class="btn-floating btn-large indigo head-link"><i class="fa fa-angle-double-up"></i></a>
+			</div>
 
-
-	<!-- CONTACT | BETTER HERE THAN AT THE BOTTOM... WHAT ABOUT NEXT TO THE NAME? -->
-	<div class="row" id="contact">
-    <div class="col m8 offset-m1">
-      <h3><i class="material-icons">arrow_right</i> Contact</h3>
-			<ul>
-				<li><i class="material-icons">email</i> clement.dallard@port.ac.uk</li>
-				<li><i class="material-icons">location_on</i> Buckingham Building, Lion Terrace, Portsmouth PO1 3HE UK</li>
-				<li><i class="material-icons">phone</i> +44 (0)23 9284 6460</li>
-			</ul>
+			<div class="parallax"><img src="images/Black_Diamonds.png">
+			</div>
 		</div>
-	</div>
-	
-	
-  <!-- MISCELLANEOUS -->
-  <div class="row" id="miscellaneous">
-    <div class="col m8 offset-m1">
-      <h3><i class="material-icons">arrow_right</i> Miscellaneous</h3>
-      <p>To be updated!</p>
-    </div>
-  </div>
-</div>
-<div class="row center">
-	<a href="#top" class="btn-floating btn-large indigo head-link"><i class="fa fa-angle-double-up"></i></a>
-</div>
 
+		<!--<footer class="page-footer grey darken-2">
+				</footer>-->
 
-<!--<footer class="page-footer grey darken-2">
-    </footer>-->
-
-
-<!--  Scripts-->
-<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" script-name="alex-brush" src="http://use.edgefonts.net/alex-brush.js"></script>
-<script type="text/javascript" script-name="carter-one" src="http://use.edgefonts.net/carter-one.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>	
-</body>
+		<!--  Scripts-->
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+		<script type="text/javascript" script-name="alex-brush" src="http://use.edgefonts.net/alex-brush.js"></script>
+		<script type="text/javascript" script-name="carter-one" src="http://use.edgefonts.net/carter-one.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>	
+	</body>
 </html>
