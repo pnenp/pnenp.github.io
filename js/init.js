@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.button-collapse').sidenav();
+    $('.sidenav').sidenav();
 		$('.scrollspy').scrollSpy();
 		$('.parallax').parallax();
 
