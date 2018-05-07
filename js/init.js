@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*Preloader*/
 $(window).load(function() {
-		//document.getElementById('loader').setAttribute("style","width:60px;height:50px");
+		//
     //setTimeout(function() {
 		//		$('body').addClass('loaded');      
     //},600);
