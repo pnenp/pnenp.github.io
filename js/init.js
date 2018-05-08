@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.ScrollSpy.init(elems, {'scrollOffset':h});
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, {'accordion':true});
+});
+
+
+
 /*Preloader*/
 $(window).load(function() {
 		//
