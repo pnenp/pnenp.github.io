@@ -74,6 +74,25 @@
 							My research is currently focused on partition of graphs under constraints, especially for community and community structure detection.</p>
 						<p>I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
 					</div>
+
+					<div class="z-depth-2" style="border-radius:0px;padding:15px">
+						<h4>Community structures and communities</h4>
+						<p>
+							A <em>community structure<em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, \dots, C_k\}$, $k\geq 2$, of $V$ such that $|C| \geq 2$ for each $C \in \Pi$ and
+									\[ \forall C_i,C_j \in \Pi,\ \forall u \in C_i,\ \frac{d_{C_i}(u)}{|C_i|-1} \geq \frac{d_{C_j}(u)}{|C_j|}\,. \]
+									The elements of $\Pi$ are called <em>communities</em>.
+									Given $C \in \Pi$, we say a vertex $u \in C$ is <em>satisfied</em> (in $C$) if it respects the above inequality.
+						</p>
+						<p>
+							We extended the above definition to the notion of communtiy (without community structure).
+							We say that $C \subset V$ is a <em>community</em> if and only if $|C| \geq 2$ and for each vertex $u \in C$, 
+							\[
+							\frac{d_C(u)}{|C|-1 } \geq \frac{ d_{\bar{C}}(u)}{|\bar{C}|}\,.
+							\]
+							Again, if a vertex $u \in C$ respects the above inequation, we say $u$ is satisfied (in $C$).
+							The inequation is equivalent to $|\bar{C}| \cdot d_C(u) \geq (|C|-1) \cdot d_{\bar{C}}(u)$ when $|C|$ contains at least two vertices.
+						</p>
+					</div>
 				</div>
 			</div>
 			
@@ -171,7 +190,8 @@
 									<li class="collection-item"><a href="https://wikimediafoundation.org/wiki/Ways_to_Give" target="_blank">Donate to Wikimedia</a></li>
 									<li class="collection-item"><a href="https://vivaldi.com/" target="_blank">Vivaldi browser</a></li>
 									<li class="collection-item"><a href="https://cnames.herokuapp.com/" target="_blank">Codenames (the game)</a></li>
-									<li class="collection-item"><a href="https://materializecss.com/" target="_blank">Materialize</a></li>
+									<li class="collection-item"><a href="https://materializecss.com/" target="_blank">Materialize</a>, or how to get a nice webpage</li>
+									<li class="collection-item"><a href="https://docs.mathjax.org/en/latest/index.html" target="_blank">Mathjax</a>, or how to get math in web</li>
 								</ul>
 							</div>
 						</li>
@@ -200,13 +220,23 @@
 			</div>
 		</div>
 
-
 		<!--  Scripts-->
 		<script
 			src="https://code.jquery.com/jquery-1.12.4.min.js"
 			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-			crossorigin="anonymous"></script>
+			crossorigin="anonymous">
+		</script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+			});
+		</script>
+		<script
+			type="text/javascript" async
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
 		<script src="js/materialize.js"></script>
 		<script src="js/init.js"></script>
+
 	</body>
 </html>
