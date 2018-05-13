@@ -8,7 +8,6 @@
     <!-- CSS  -->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -86,10 +85,13 @@
 					<div class="z-depth-2" style="border-radius:0px;padding:15px">
 						<h4>Community structures and communities</h4>
 						<p>
-							A <em>community structure<em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, \dots, C_k\}$, $k\geq 2$, of $V$ such that $|C| \geq 2$ for each $C \in \Pi$ and
+							A <em>community structure</em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, \dots, C_k\}$, $k\geq 2$, of $V$ such that $|C| \geq 2$ for each $C \in \Pi$ and
 									$\forall C_i,C_j \in \Pi$, $\forall u \in C_i,$ \[\frac{d_{C_i}(u)}{|C_i|-1} \geq \frac{d_{C_j}(u)}{|C_j|}\,. \]
 									The elements of $\Pi$ are called <em>communities</em>.
-									Given $C \in \Pi$, we say a vertex $u \in C$ is <em>satisfied</em> (in $C$) if it respects the above inequality.
+									<!--Given $C \in \Pi$, we say a vertex $u \in C$ is <em>satisfied</em> (in $C$) if it respects the above inequality.-->
+									Finding a community structure can be found in polynomial time (Olsen, 2013).
+									However, the complexity remains unknown when fixing the number of communities.
+									My work mainly focus on $2$-community structures (Bazgan, Chlebikova and Pontoizeau, 2018), where the community structure contains exactly $2$ communities.
 						</p>
 						<p>
 							We extend the above definition to define a community without the need of a community structure.
@@ -97,8 +99,8 @@
 							\[
 							\frac{d_C(u)}{|C|-1 } \geq \frac{ d_{\bar{C}}(u)}{|\bar{C}|}\,.
 							\]
-							Again, if a vertex $u \in C$ respects the above inequation, we say $u$ is satisfied (in $C$).
-							The inequation is equivalent to $|\bar{C}| \cdot d_C(u) \geq (|C|-1) \cdot d_{\bar{C}}(u)$ when $|C|$ contains at least two vertices.
+							<!--Again, if a vertex $u \in C$ respects the above inequation, we say $u$ is satisfied (in $C$).
+							The inequation is equivalent to $|\bar{C}| \cdot d_C(u) \geq (|C|-1) \cdot d_{\bar{C}}(u)$ when $|C|$ contains at least two vertices.-->
 						</p>
 						<h5>References</h5>
 						<p>
@@ -117,8 +119,7 @@
 								</a></li>
 								<li>Cristina Bazgan, Janka Chlebikova, and Thomas Pontoizeau</li>
 								<li><em>Algorithmica</em>, Springer, 2018.</li>
-							</ul>
-							
+							</ul>							
 						</p>
 					</div>
 				</div>
@@ -257,6 +258,14 @@
 		</script>
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS", "output/CommonHTML"],
+
+			"HTML-CSS": {
+			fonts: ["Gyre-Termes", "TeX", "STIX"],
+			scale: 100,
+			width: "container"
+			},
+
 			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 			});
 		</script>
