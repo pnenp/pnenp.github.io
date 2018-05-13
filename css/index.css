@@ -3,6 +3,14 @@ nav .brand-logo {
 		color: white;
 }
 
+.citeref {
+		font-size: small;
+}
+
+h5 {
+		text-decoration: underline;
+}
+
 .col{font-family:Lora,'Times New Roman',serif;font-size:20px;color:#404040}
 p {
 		line-height: 1.5;
@@ -133,32 +141,6 @@ hr {
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-}
-
-.subTitleFont
-{
-		-webkit-box-sizing: content-box;
-		-moz-box-sizing: content-box;
-		box-sizing: content-box;
-		border: none;
-		font: normal 25px/1 "alex-brush", Helvetica, sans-serif;
-		
-		
-		-o-text-overflow: ellipsis;
-		text-overflow: ellipsis;
-}
-.titleFont
-{
-		-webkit-box-sizing: content-box;
-		-moz-box-sizing: content-box;
-		box-sizing: content-box;
-		border: none;
-		font: normal 65px/1 "carter-one", Helvetica, sans-serif;
-		
-		
-		-o-text-overflow: ellipsis;
-		text-overflow: ellipsis;
-
 }
 
 .fa{
