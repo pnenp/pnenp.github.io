@@ -142,8 +142,8 @@ nav ul a.active {
 
 hr {
 		height:0;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		border: 0;
 		border-top: 1px solid #eee;
 }
