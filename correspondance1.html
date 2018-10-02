@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Clément Dallard</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="z-depth-2" style="border-radius:0px;padding:15px">
+
+
+      <h5>Lemma 1:</h5>
+      <p>
+        Effectivement on suppose que $G$ est connexe, et donc que $|M| \geq |N|-1$. J'ai ajoute l'argument a la preuve. Puisque $M \cup \{z_1,z_2\} \subseteq S$, on obtient que  $|S| \geq |M|+2 > |N| \geq |\bar{S}|$.
+        Dans l'equation, on a $|\bar{S}| \cdot (|S| - 2)> (|\bar{S}| -1) \cdot (|S| - 1)$ qui est forcement vrai car $|S| >|\bar{S}|$.
+        Je suis pas sur de comprendre exactement ce qui te gene, ni le commentaire de Janka. Je loupe peut-etre quelque chose.
+      </p>
+
+      <h5>Notations:</h5>
+      <p>
+        Janka pensait que la notation longue etait adaptee aux resultats, alors que la courte facilite la lecture en dehors des resultats. Je trouve aussi que le *Max Proportionally Dense Subgraph* de partout c'est un peu long. Mais ne garder que *Max PDS* de partout risquerait de faire oublier le vrai nom du probleme aux lecteurs... Ton avis compte aussi, dis moi ce que tu preferes.
+      </p>
+
+      <h5>Lemma 2:</h5>
+      <p>
+        Je ne vois toujours pas la boulette... J'ai change l'ordre, precedement ecrit $|\bar{S}_1| \cdot (|S_1|-2) < (|S_1|-1) \cdot |\bar{S}_1|$ on a maintenant $|\bar{S}_1| \cdot (|S_1|-2) < |\bar{S}_1| \cdot (|S_1|-1)$. Donc on n'a pas $|S| > |\bar{S}|+1$ mais seulement $|S| > |\bar{S}|$. Est-ce que c'est plus clair ?
+
+        Pour la deuxieme partie, on a $f \in S_1 \cap M$, $d_{S_2}(f) - d_{S_1}(f) = |S_2| - |S_1| \geq 0$ and $d_{\bar{S_2}}(f) \leq d_{\bar{S_1}}(f)$. Une autre facon de l'ecrire serait de dire que $d_{S_2}(f) = d_{S_1}(f) + \varepsilon$ avec $\varepsilon = |S_2|-|S_1| \geq 0$.
+
+        Dans le papier, il est ecrit $\frac{d_{S_2}(f)}{|S_2|-1} \geq \frac{d_{S_1}(f)}{|S_1|-1}\geq \frac{d_{\bar{S_1}}(f)}{|S_1|}\geq \frac{d_{\bar{S_2}}(f)}{|S_2|}$ mais on peut le reecrire avec
+        l'espsilon: $\frac{d_{S_2}(f)}{|S_2|-1} = \frac{d_{S_1}(f) + \varepsilon}{|S_1|+\varepsilon} = \frac{d_{S_1}(f)}{|S_1|-1} \geq \frac{d_{\bar{S_1}}(f)} {|S_1|} = \frac{d_{\bar{S_2}}(f) - \varepsilon}{|S_2| - \varepsilon} \geq \frac{d_{\bar{S_2}}(f)}{|S_2|}$. Tu preferes cette version ?
+
+        Finalement, tu as raison de dire que $S_1 \cap N \neq S_2 \cap N$, je le change en $S_2 \cap N \subseteq S_1 \cap N$ et on peut conclure.
+      </p>
+
+      <h5>Theorem 5:</h5>
+      <p>
+        Bien vu, c'est change.
+      </p>
+
+      <h5>Lemma 4:</h5>
+      <p>
+        Desole, en changeant le papier les numeros de lignes et fin de page ont change... Si tu parles de l''inequation $\frac{|S| -|M|-1}{|S|-1} \geq \frac{|L| + k -1}{|L|+|M|+k-1}$ remarque qu'on peut faire le meme trick qu'avant, et introduire $\varepsilon$ tel que $|S| = |L| + |M| + k + \varepsilon$ et refaire les calculs. Comme $\varepsilon$ est positif ou nul, on peut conclure.
+        Pareil pour la derniere inequation, on a $|\bar{S}| = |N| - k - \varepsilon$ et $d_{\bar{S}}(f) \leq |N| - k - \epsilon - 1$.
+      </p>
+
+      <h5>Lemma 5:</h5>
+      <p>
+        Je ne comprends pas pourquoi on devrait utiliser $\frac{|S|-|M|-1}{|S|-1} \geq \frac{|L| + k -1}{|L|+|M|+k-1}$, qui est strictementequivalent a dire que $|S| \geq |L|+|M|+k$... Quand tu dis $|S| \geq |L|+|M|+ k > |M|+|N|$, ca implique que, forcement, des sommets de $S$ sont dans $L$, et c'est le pigeon hole principle ! J'ai ajoute ce detail pour aider la lecture.
+      </p>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS", "output/CommonHTML"],
+
+  "HTML-CSS": {
+    fonts: ["TeX", "STIX"],
+    scale: 100,
+    width: "container"
+  },
+
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  }
+});
+</script>
+<script
+type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
