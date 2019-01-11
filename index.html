@@ -62,27 +62,27 @@
         <div class="z-depth-2" style="border-radius:0px;padding:15px">
           <p>I am a PhD student in the <a href="http://www.port.ac.uk/school-of-computing/" target="_blank">School of Computing</a> at the <a href="http://www.port.ac.uk/" target="_blank">University of Portmouth, UK</a>.
             I work under the supervision of <a href="https://researchportal.port.ac.uk/portal/en/persons/janka-chlebikova(21c21cb6-3582-46db-a4cd-2137aa945a0a).html" target="_blank">Janka Chlebíková</a>.
-            My research is about partition of graphs under constraints, community structures and dense subgraphs detection.</p>
+            My research is mainly about partition of graphs under colour or density constraints.</p>
             <p>I received a Master's degree in <em>Theoretical Computer Science</em> after graduating from the <a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">University of Montpellier</a> in 2016. </p>
           </div>
 
           <div class="z-depth-2" style="border-radius:0px;padding:15px">
-            <h4>2-community structure</h4>
+            <h4>2-PDS partition</h4>
             <p>
-              A <em>$2$-community structure</em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, C_2\}$ of $V$ such that $|C_i| \geq 2$ for each $C_i \in \Pi$ and
+              A <em>$2$-PDS partition</em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, C_2\}$ of $V$ such that $|C_i| \geq 2$ for each $C_i \in \Pi$ and
               $\forall i,j \in \{1,2\}$, $\forall u \in C_i$,
               \[
               \frac{d_{C_i}(u)}{|C_i|-1} \geq \frac{d_{C_j}(u)}{|C_j|}\,.
               \]
-              The elements of $\Pi$ are called <em>communities</em>.
-              A $2$-community structure can be found in polynomial time in trees, maximum degree $3$ and minimum degree $|V|-3$ (Bazgan, Chlebíková and Pontoizeau, 2018).
+              The elements of $\Pi$ are called <em>PDS</em>.
+              A $2$-PDS partition can be found in polynomial time in trees, maximum degree $3$ and minimum degree $|V|-3$ (Bazgan, Chlebíková and Pontoizeau, 2018).
               <!--Given $C \in \Pi$, we say a vertex $u \in C$ is <em>satisfied</em> (in $C$) if it respects the above inequality.-->
-              However, the complexity of finding a $2$-community structure in general graphs remains unknown.
+              However, the complexity of finding a $2$-PDS partition in general graphs remains unknown.
             </p>
             <p>
               <h4>Proportionally dense subgraph (PDS)</h4>
               <p>
-                Inspired by the above definition of a community structure, we define the notion a <em>proportionally dense subgraph</em> (PDS).
+                Inspired by the above definition of a PDS partition, we define the notion a <em>proportionally dense subgraph</em> (PDS).
                 Let $G=(V,E)$ be a graph, and $S \subset V$.
                 We say that the induced subgraph $G[S]$ is a <em>proportionally dense subgraph</em> (PDS) if and only if $2 \leq |V| \lt S$ and for each vertex $u \in S$
                 $\frac{d_S(u)}{|S|-1} \geq \frac{ d(u)}{|V|-1}$, which is equivalent to $\frac{d_S(u)}{|S|-1} \geq \frac{ d_{\bar{S}}(u)}{|\bar{S}|}$.
@@ -154,10 +154,10 @@
 												<li><em><b>Complexity of scheduling for DARP with soft ride times</b></em></li>
 												<li>Janka Chlebíková, Clément Dallard, and Niklas Paulsen</li>
 												<li><em>International Conference on Algorithms and Complexity</em>, Springer, 2019.</li>
-												
+
 											</ul>
 										</p>
-										
+
                     <!--
                     <p>
                       <ul class="z-depth-2" style="border-radius:0px;padding:15px">
