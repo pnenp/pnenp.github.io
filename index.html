@@ -67,22 +67,9 @@
           </div>
 
           <div class="z-depth-2" style="border-radius:0px;padding:15px">
-            <h4>2-PDS partition</h4>
-            <p>
-              A <em>$2$-PDS partition</em> of a graph $G=(V,E)$ is a partition $\Pi=\{C_1, C_2\}$ of $V$ such that $|C_i| \geq 2$ for each $C_i \in \Pi$ and
-              $\forall i,j \in \{1,2\}$, $\forall u \in C_i$,
-              \[
-              \frac{d_{C_i}(u)}{|C_i|-1} \geq \frac{d_{C_j}(u)}{|C_j|}\,.
-              \]
-              The elements of $\Pi$ are called <em>PDS</em>.
-              A $2$-PDS partition can be found in polynomial time in trees, maximum degree $3$ and minimum degree $|V|-3$ (Bazgan, Chlebíková and Pontoizeau, 2018).
-              <!--Given $C \in \Pi$, we say a vertex $u \in C$ is <em>satisfied</em> (in $C$) if it respects the above inequality.-->
-              However, the complexity of finding a $2$-PDS partition in general graphs remains unknown.
-            </p>
-            <p>
-              <h4>Proportionally dense subgraph (PDS)</h4>
+            <h4>Proportionally dense subgraph (PDS)</h4>
               <p>
-                Inspired by the above definition of a PDS partition, we define the notion a <em>proportionally dense subgraph</em> (PDS).
+                We define the notion a <em>proportionally dense subgraph</em> (PDS).
                 Let $G=(V,E)$ be a graph, and $S \subset V$.
                 We say that the induced subgraph $G[S]$ is a <em>proportionally dense subgraph</em> (PDS) if and only if $2 \leq |V| \lt S$ and for each vertex $u \in S$
                 $\frac{d_S(u)}{|S|-1} \geq \frac{ d(u)}{|V|-1}$, which is equivalent to $\frac{d_S(u)}{|S|-1} \geq \frac{ d_{\bar{S}}(u)}{|\bar{S}|}$.
